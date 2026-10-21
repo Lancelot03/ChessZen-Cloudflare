@@ -1,0 +1,142 @@
+{
+  "project_metadata": {
+    "name": "ChessZen Classes",
+    "domain": "Premium Chess Coaching",
+    "theme": "Dark",
+    "archetype": "5 (Jewel & Luxury)",
+    "description": "Premium, modern, mobile-first website targeting parents and advanced learners. The design evokes intellectual depth, strategy, and luxury through dark tones and gold accents."
+  },
+  "typography": {
+    "headings_font": "Playfair Display",
+    "headings_classes": "font-serif tracking-tight",
+    "body_font": "Manrope",
+    "body_classes": "font-sans leading-relaxed tracking-normal",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-[1.1]",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-[1.2]",
+      "h3": "text-xl sm:text-2xl lg:text-3xl leading-[1.3]",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base text-zinc-400",
+      "labels": "text-xs tracking-[0.2em] uppercase font-bold text-amber-500"
+    }
+  },
+  "color_palette": {
+    "brand_gold": "#D4AF37",
+    "brand_gold_hover": "#F3C53C",
+    "brand_gold_muted": "rgba(212, 175, 55, 0.15)",
+    "background_primary": "#050505",
+    "background_secondary": "#0A0A0A",
+    "surface_glass": "bg-white/[0.03] backdrop-blur-xl",
+    "border_subtle": "border-white/10",
+    "border_highlight": "border-[#D4AF37]/30",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA"
+  },
+  "layout_strategy": {
+    "global_spacing": "py-24 md:py-32 gap-12",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "asymmetric_hero": "grid grid-cols-1 lg:grid-cols-12 gap-8 items-center",
+    "container": "container mx-auto px-6 max-w-7xl"
+  },
+  "component_rules": {
+    "buttons": {
+      "primary": "bg-[#D4AF37] hover:bg-[#F3C53C] text-black font-semibold rounded-none px-8 py-4 transition-colors duration-300 flex items-center justify-center gap-2",
+      "secondary": "bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37]/10 font-semibold rounded-none px-8 py-4 transition-all duration-300"
+    },
+    "cards": {
+      "base": "bg-[#0A0A0A] border border-white/5 hover:border-white/20 transition-all duration-500 p-8",
+      "glass": "bg-white/[0.02] backdrop-blur-md border border-white/10 p-8"
+    },
+    "forms": {
+      "input": "bg-[#0A0A0A] border-white/10 text-white placeholder:text-zinc-600 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] rounded-none transition-all",
+      "label": "text-sm text-zinc-300 font-medium mb-2 block"
+    }
+  },
+  "media_urls": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/062f86ec-d9fd-457a-a435-1760988071f4/images/bf09907951cc8a96a23959115fdab8d1c4e49d4ccd53ac6010116491d2df0895.png",
+      "description": "Cinematic glass chess piece on dark board for Hero section",
+      "usage": "Hero section background with dark overlay bg-black/60"
+    },
+    "texture_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/062f86ec-d9fd-457a-a435-1760988071f4/images/4c3e6104e9b0494ab2e9b15a2a95e36e5bbc3e90e4479af55ab1afa9531f3d47.png",
+      "description": "Dark moody abstract background with geometric gold lines",
+      "usage": "Background for Why ChessZen or specific dark sections"
+    },
+    "programs_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/062f86ec-d9fd-457a-a435-1760988071f4/images/9a7422f80e743d900101e75ec51ed1732539924223ee58316b477fbdc3ae34a0.png",
+      "description": "Elegant macro shot of a golden pawn on a wooden chessboard",
+      "usage": "Programs section background texture"
+    },
+    "coach_portrait": {
+      "url": "https://images.unsplash.com/photo-1584940120505-117038d90b05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBpbmRpYW4lMjBtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc1NTg2NDc4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional Indian male portrait",
+      "usage": "About Coach (Vivek Singh) section"
+    },
+    "chess_kids": {
+      "url": "https://images.unsplash.com/photo-1741513421047-cf5adda710bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxraWQlMjBwbGF5aW5nJTIwY2hlc3N8ZW58MHx8fHwxNzc1NTg2NDYwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Boy concentrating while playing chess",
+      "usage": "Training Approach or Benefits section"
+    },
+    "achievements_trophy": {
+      "url": "https://images.pexels.com/photos/6532369/pexels-photo-6532369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Gold trophy on dark background",
+      "usage": "Achievements section visual"
+    }
+  },
+  "sections_strategy": {
+    "header": {
+      "style": "fixed top-0 w-full z-50 bg-[#050505]/80 backdrop-blur-xl border-b border-white/10 transition-all",
+      "logo": "Text 'ChessZen Classes' in Playfair Display with gold accent on 'Zen'",
+      "navigation": "Visible links on desktop, gold hover states. Mobile menu full screen dark overlay."
+    },
+    "hero": {
+      "layout": "Full screen height (min-h-screen). Absolute background image with bg-black/70 overlay. Content centrally aligned or asymmetrical 8-col grid.",
+      "content": "H1 title mapping intellectual growth to chess. CTA group (Primary: View Programs, Secondary: Contact Coach)"
+    },
+    "about_coach": {
+      "layout": "Asymmetrical split. Left: Large Portrait with subtle gold glow. Right: Credentials.",
+      "details": "Highlight FIDE ID: 537023560, AICF ID: 266194UP2024, Chess.com 1874, Lichess 2127, MTech NIT Surathkal. Use monospaced font for rating numbers for a technical/precision feel."
+    },
+    "programs": {
+      "layout": "3 Column Grid. Cards with dark flat backgrounds, 1px subtle white/10 borders.",
+      "content": "Beginner, Intermediate, Advanced. Highlight the target audience, duration, and key focus. Add a subtle gold top-border on hover."
+    },
+    "why_chesszen": {
+      "layout": "Bento Grid pattern. Mix square and wide rectangles.",
+      "visuals": "Use high contrast typography and sparse icons (lucide-react stroke 1.5)."
+    },
+    "testimonials": {
+      "layout": "Horizontal scroll / Carousel setup (Swiper or pure CSS snap scroll).",
+      "cards": "Crystal Glass style (bg-white/[0.02]) with gold quote icons.",
+      "submission": "Include a prominent 'Submit your review' button triggering a Shadcn dialog."
+    },
+    "contact_enquiry": {
+      "layout": "Split section: Left form, Right contact info & Google Map.",
+      "actions": "Prominent WhatsApp and Direct Call buttons. Form uses strict border-bottom-only inputs for a high-end editorial feel."
+    },
+    "footer": {
+      "style": "py-24 border-t border-white/10 bg-[#0A0A0A].",
+      "content": "Large typography for brand name. Minimal links."
+    }
+  },
+  "motion_and_interactions": {
+    "scroll": "MANDATORY: Implement lenis smooth scrolling for premium feel.",
+    "animations": "Framer Motion for staggered fade-ups on scroll.",
+    "hover_states": "Buttons translate-y-[-2px] with increased shadow. Cards reveal a subtle gold glow on border."
+  },
+  "accessibility_and_testing": {
+    "testing_attributes": "All interactive elements (buttons, inputs, links, tabs) MUST include 'data-testid' in kebab-case format.",
+    "contrast": "Ensure white/gold text on #050505 background meets WCAG AA standards. Form labels must be visible."
+  },
+  "instructions_to_main_agent": [
+    "Use Tailwind for all styling. Configure tailwind.config.js to extend colors with brand_gold (#D4AF37) and background_primary (#050505).",
+    "Import Playfair Display (serif) and Manrope (sans-serif) via Google Fonts in index.css.",
+    "Strictly follow the Dark Theme. Do not use generic white backgrounds.",
+    "Use raw HTML/Tailwind for structural layout (bento grids, asymmetrical sections) instead of rigid Shadcn layout components.",
+    "Use Shadcn UI ONLY for complex logic forms (Dialog, Accordion, Select, Form, Carousel), but heavily strip Vercel-look to match the premium dark/gold luxury theme.",
+    "Ensure the Mobile experience is fully responsive (max image heights 80vh, grid-cols-1 on mobile).",
+    "Admin Panel: Create a simple dashboard for Testimonial moderation (Accept/Reject). Use a flat dark table.",
+    "Never use generic placeholder images. ONLY use the provided media_urls."
+  ]
+}

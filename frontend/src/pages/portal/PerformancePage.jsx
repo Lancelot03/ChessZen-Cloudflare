@@ -86,15 +86,28 @@ export default function PerformancePage() {
     }
   };
 
-  const loadLeaderboard = async () => {
+  // const loadLeaderboard = async () => {
+  //   if (!lbTestName) return;
+  //   try {
+  //     const res = await portalApi.leaderboard(lbTestName, lbBatch || undefined);
+  //     setLeaderboard(res.data);
+  //   } catch { toast.error("Failed to load leaderboard"); }
+  // };
+
+  const loadLeaderboard = useCallback(async () => {
     if (!lbTestName) return;
     try {
       const res = await portalApi.leaderboard(lbTestName, lbBatch || undefined);
       setLeaderboard(res.data);
-    } catch { toast.error("Failed to load leaderboard"); }
-  };
+    } catch {
+      toast.error("Failed to load leaderboard");
+    }
+}, [lbTestName, lbBatch]);
 
-  useEffect(() => { if (lbTestName) loadLeaderboard(); }, [lbTestName, lbBatch]);
+  // useEffect(() => { if (lbTestName) loadLeaderboard(); }, [lbTestName, lbBatch]);
+  useEffect(() => {
+    if (lbTestName) loadLeaderboard();
+}, [lbTestName, loadLeaderboard]);
 
   const chartData = testData?.tests ? [...testData.tests].reverse().map(t => ({ name: t.test_name, date: t.test_date, score: t.score })) : [];
 

@@ -22,14 +22,37 @@ export default function Testimonials() {
     photo: null
   });
 
+  // const fetchTestimonials = useCallback(async () => {
+  //   try {
+  //     const res = await axios.get(`${API}/testimonials?approved_only=true`);
+  //     setTestimonials(res.data);
+  //   } catch {
+  //     // silently fail for public testimonials fetch
+  //   }
+  // }, []);
+
   const fetchTestimonials = useCallback(async () => {
-    try {
-      const res = await axios.get(`${API}/testimonials?approved_only=true`);
-      setTestimonials(res.data);
-    } catch {
-      // silently fail for public testimonials fetch
-    }
-  }, []);
+  try {
+    const res = await axios.get(
+      `${API}/testimonials?approved_only=true`
+    );
+
+    const data = res.data;
+
+    const list = Array.isArray(data)
+      ? data
+      : Array.isArray(data?.testimonials)
+        ? data.testimonials
+        : Array.isArray(data?.data)
+          ? data.data
+          : [];
+
+    setTestimonials(list);
+  } catch (error) {
+    console.error("Failed to fetch testimonials:", error);
+    setTestimonials([]);
+  }
+}, []);
 
   useEffect(() => {
     fetchTestimonials();
